@@ -1,0 +1,6 @@
+[submodule "trivia-frontend"]
+	path = trivia-frontend
+	url = git@github.com:gyadam/trivia-frontend.git
+[submodule "trivia-backend"]
+	path = trivia-backend
+	url = git@github.com:gyadam/trivia-backend.git
