@@ -1,4 +1,4 @@
-# Udacity Trivia
+# QuizOverflow
 
 ### Overview
 
@@ -38,6 +38,13 @@ Specifically, the following permissions are assigned to each role:
 * **Quizmaster**: ```get:questions```
 
 The frontend uses [Auth0](https://auth0.com/) to authenticate users and grab the JWT with the user information (including RBAC info). The JWT is included in API calls, and verified by the backend to make sure the user has the required permissions to access the requested data.
+
+---
+**UPDATE**
+
+Since submitting the capstone project, the requirement for permissions has been removed for some endpoints, to allow visitors to view more pages on the website.
+
+---
 
 ### Backend
 
