@@ -2,7 +2,7 @@
 
 ### Overview
 
-Udacity Trivia is the capstone project created for the Full Stack Developer Nanodegree at Udacity. The goal of the project was to:
+QuizOverflow is the capstone project created for the Full Stack Developer Nanodegree at Udacity. The goal of the project was to:
 
 * Create a backend API following RESTful principles
 * Create a frontend to interact with the backend
@@ -12,12 +12,10 @@ Udacity Trivia is the capstone project created for the Full Stack Developer Nano
 * Apply test-driven development, writing unit tests for each endpoint
 * Deploy the backend (and frontend) application to Heroku
 
-Both the frontend and backend of Udacity Trivia are hosted on [Heroku](https://www.heroku.com/), and are accessible at the folling URLs:
+Both the frontend and backend of QuizOverflow are hosted on [Heroku](https://www.heroku.com/), and are accessible at the folling URLs:
 
-* **Frontend**: https://udacitytrivia.herokuapp.com/
+* **Frontend**: https://quizoverflow.herokuapp.com/
 * **Backend**: http://trivbackend.herokuapp.com/
-
-<img src="./images/list_view.png" alt="Homepage of Udacity Trivia" width="700"/>
 
 ### Tech stack
 
@@ -29,9 +27,7 @@ Both the frontend and backend of Udacity Trivia are hosted on [Heroku](https://w
 
 ### Frontend
 
-The frontend can be visited at https://udacitytrivia.herokuapp.com/, and allows visitors to play a quiz based on a selected category of questions.
-
-<img src="./images/quiz_view.png" alt="Quiz view" width="700"/>
+The frontend can be visited at https://quizoverflow.herokuapp.com/, and allows visitors to play a quiz based on a selected category of questions.
 
 Users can also log in to access further features of the website. Two roles were setup using Auth0:
 * **Admin**: has permission to view, add, delete and edit all questions
@@ -40,14 +36,6 @@ Users can also log in to access further features of the website. Two roles were 
 Specifically, the following permissions are assigned to each role:
 * **Admin**: ```get:questions```, ```add:questions```, ```patch:questions```, ```delete:questions```
 * **Quizmaster**: ```get:questions```
-
-After login, the navigation bar shows additional options:
-
-<img src="./images/list_view.png" alt="List view" width="700"/>
-
-Admins can add new questions in the Add tab:
-
-<img src="./images/add_question.png" alt="Add questions" width="700"/>
 
 The frontend uses [Auth0](https://auth0.com/) to authenticate users and grab the JWT with the user information (including RBAC info). The JWT is included in API calls, and verified by the backend to make sure the user has the required permissions to access the requested data.
 
